@@ -1,0 +1,7 @@
+Product,Quantity,Price,City,Order_Date,Revenue
+Laptop,2,50000,Hyderabad,2026-01-05,100000
+Phone,5,15000,Vizag,2026-01-07,75000
+Tablet,3,20000,Vijayawada,2026-01-08,60000
+Laptop,1,50000,Vizag,2026-02-10,50000
+Phone,4,15000,Hyderabad,2026-02-12,60000
+Tablet,2,20000,Vijayawada,2026-02-15,40000
