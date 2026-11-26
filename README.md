@@ -1,57 +1,71 @@
-# Hands-On Data Lab Implementation
+# Hands-On Data Analysis with Python
 
-## Project Summary
-This project demonstrates basic data analysis using Python. It covers data creation, inspection, cleaning checks, calculations, grouping, and visualization.
+This is a small practice project I built to get more comfortable working with data in Python. I used a sample sales dataset to practise the steps I would normally follow before sharing a simple analysis: load the data, check its quality, calculate useful values, group the results and make a few charts.
 
-## Tools and Libraries
+## What is in this repository?
+
+| File | Purpose |
+|---|---|
+| `hands_on_data_lab.ipynb` | Notebook containing the analysis and visualisations |
+| `sample_sales_data.csv` | Small sample sales dataset used by the notebook |
+
+## Tools used
+
 - Python
 - Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
+- Pandas and NumPy
+- Matplotlib and Seaborn
 
-## Dataset
-The file `sample_sales_data.csv` contains sample sales records with these columns:
-- `Product`: product name
-- `Quantity`: number of units sold
-- `Price`: price per unit in INR
-- `City`: city associated with the sale
-- `Order_Date`: sample order date
-- `Revenue`: Quantity multiplied by Price
+## What I worked on
 
-## Analysis Performed
-1. Loaded the dataset into a Pandas DataFrame.
-2. Checked the number of rows and columns.
+1. Loaded the CSV file into a Pandas DataFrame.
+2. Reviewed the dataset shape, columns and data types.
 3. Checked for missing values and duplicate rows.
-4. Calculated revenue for each record.
-5. Summarized revenue by product and city.
-6. Summarized revenue by month.
-7. Created charts to compare product-wise revenue, city-wise revenue, and quantity versus revenue.
+4. Calculated revenue using quantity multiplied by unit price.
+5. Grouped sales by product, city and month.
+6. Used charts to compare the results.
 
-## Key Findings
-- Total revenue in the sample dataset: ₹385,000.
-- Total units sold: 17.
-- Laptop revenue: ₹150,000.
-- Phone revenue: ₹135,000.
-- Tablet revenue: ₹100,000.
-- Hyderabad revenue: ₹160,000.
-- Vizag revenue: ₹125,000.
-- Vijayawada revenue: ₹100,000.
-- January 2026 revenue: ₹235,000.
-- February 2026 revenue: ₹150,000.
+## A quick look at the sample results
 
-## How to Run
-1. Install Python.
-2. Install the required libraries:
-   ```bash
-   py -m pip install pandas numpy matplotlib seaborn jupyter
-   ```
-3. Start Jupyter Notebook:
-   ```bash
-   py -m notebook
-   ```
-4. Open the project notebook (`hands_on_data_lab.ipynb`) and run the cells from top to bottom.
+The dataset contains six sample sales records. In this dataset:
 
-## Note
-This is a small sample dataset created for learning and demonstration. The results describe only these sample records and should not be treated as real business data.
+- Total revenue is **₹385,000**.
+- A total of **17 units** were sold.
+- Laptop sales contributed **₹150,000**.
+- Hyderabad recorded **₹160,000** in revenue.
+- January 2026 recorded **₹235,000** in revenue.
+
+These figures are only the result of the small sample included here. They are not real company sales figures and should not be used to make business decisions.
+
+## Run it on your computer
+
+You will need Python installed.
+
+```bash
+python -m pip install pandas numpy matplotlib seaborn jupyter
+```
+
+Clone the repository and open the project folder:
+
+```bash
+git clone https://github.com/Venkatakishore125/HandsOnDataLab.git
+cd HandsOnDataLab
+jupyter notebook
+```
+
+Open `hands_on_data_lab.ipynb` and run the cells from top to bottom.
+
+## What I would like to improve next
+
+- Work with a larger and more realistic sales dataset.
+- Add more data-quality checks, including date and numeric-column validation.
+- Compare average order value and product contribution.
+- Write a short business takeaway below each chart.
+- Add a requirements file and screenshots of the notebook output.
+
+## About
+
+This is a learning project focused on practising the basic data-analysis workflow. Feedback and suggestions are welcome.
+
+**Author:** Venkata Kishore Seelam  
+**GitHub:** [Venkatakishore125](https://github.com/Venkatakishore125)
